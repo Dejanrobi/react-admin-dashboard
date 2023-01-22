@@ -16,6 +16,7 @@ const TopBar = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
   const colorMode = useContext(ColorModeContext); 
+  // console.log("TopBar", colors.primary[400])
   return (
     // Box component is like a div in MaterialUI
     <Box display="flex" justifyContent="space-between" p={2}>

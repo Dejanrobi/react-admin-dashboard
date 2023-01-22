@@ -18,40 +18,49 @@ import TimelineOutlinedIcon from "@mui/icons-material/TimelineOutlined";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
 import MapOutlinedIcon from "@mui/icons-material/MapOutlined";
 
+
 const Item = ({ title, to, icon, selected, setSelected }) => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+
+  
+
+
+  
   return (
-    <MenuItem
-      active={selected === title}
-      style={{
-        color: colors.grey[100],
-      }}
-      onClick={() => setSelected(title)}
-      icon={icon}
-    >
-      <Typography>{title}</Typography>
-      <Link to={to} />
-    </MenuItem>
-  );
+      <MenuItem
+        active={selected === title}
+        style={{
+          color: colors.grey[100],
+        }}
+        onClick={() => setSelected(title)}
+        icon={icon}
+      >
+        <Typography>{title}</Typography>
+        <Link to={to} />
+      </MenuItem>
+    );
 };
 
 const Sidebar = () => {
+
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
+  // console.log("Sidebar",colors.primary[400])
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [selected, setSelected] = useState("Dashboard");
+  // console.log(colors.primary[400])\
+  // console.log(theme.palette.mode==="dark"?true:false)
 
   return ( 
     <Box
-      // backgroundColor = {colors.primary[400]}
       
       sx={{
         "& .pro-sidebar-inner": {
-          background: `${colors.primary[400]} !important`,
+          backgroundColor: `${theme.palette.mode==="dark"?"#101624":"#f2f0f0"} !important`,
         },
         "& .pro-icon-wrapper": {
-          backgroundColor: "transparent !important",
+          backgroundColor: "Transparent !important",
         },
         "& .pro-inner-item": {
           padding: "5px 35px 5px 20px !important",
