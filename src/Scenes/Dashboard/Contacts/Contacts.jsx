@@ -52,12 +52,12 @@ const Team = () => {
             color: `${colors.grey[100]} !important`,
           },
 
-
         }}
       >
         <DataGrid
           rows={mockDataContacts}
           columns={columns} 
+          components={{Toolbar: GridToolbar}}
         />
       </Box>
     </Box>
