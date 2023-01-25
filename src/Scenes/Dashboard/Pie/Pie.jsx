@@ -1,3 +1,6 @@
+// BUILDING CHARTS
+// SITE: nivo.rocks
+
 import React from 'react'
 import { Box } from '@mui/material';
 import PieChart from '../../../Components/PieChart/PieChart';

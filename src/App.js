@@ -16,7 +16,7 @@ import Geography from "./Scenes/Dashboard/Geography/Geography";
 import Calendar from "./Scenes/Dashboard/Calendar/Calendar";
 import { Route, Routes } from 'react-router-dom';
 
-// import './App.css';
+import './App.css';
 
 function App() {
   // Color Mode hook

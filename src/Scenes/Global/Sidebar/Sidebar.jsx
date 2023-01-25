@@ -54,6 +54,10 @@ const Sidebar = () => {
 
   return ( 
     <Box
+      // position="fixed"
+      // top="0"
+      // left="0"
+      // bottom="0"
       
       sx={{
         "& .pro-sidebar-inner": {
